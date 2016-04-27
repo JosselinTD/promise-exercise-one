@@ -1,0 +1,20 @@
+{
+  "name": "exercise-sample",
+  "version": "1.0.0",
+  "description": "Coderpower exercise template",
+  "directories": {
+    "test": "./test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coderpower/exercise-template.git"
+  },
+  "author": "Coderpower Sample",
+  "homepage": "https://github.com/Coderpower/exercise-template.git#readme",
+  "dependencies": {
+    "expect.js": "^0.3.1"
+  }
+}
