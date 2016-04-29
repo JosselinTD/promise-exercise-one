@@ -95,9 +95,9 @@ The meta.json file tell us where the editables files are for the deployment.
 #### **package.json**
 
     {
-      "name": "exercise-sample",
+      "name": "javascript exercise sample",
       "version": "1.0.0",
-      "description": "Coderpower exercise template",
+      "description": "Coderpower javascript exercise template",
       "directories": {
         "test": "./test"
       },
@@ -106,10 +106,10 @@ The meta.json file tell us where the editables files are for the deployment.
       },
       "repository": {
         "type": "git",
-        "url": "git+https://github.com/Coderpower/exercise-template.git"
+        "url": "git+https://github.com/Coderpower/javascript-exercise-template.git"
       },
       "author": "Coderpower Sample",
-      "homepage": "https://github.com/Coderpower/exercise-template.git#readme",
+      "homepage": "https://github.com/Coderpower/javascript-exercise-template.git#readme",
       "dependencies": {
         "expect.js": "^0.3.1"
       }
