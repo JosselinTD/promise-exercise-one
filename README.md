@@ -112,3 +112,18 @@ The meta.json file tell us where the editables files are for the deployment.
       }
     }
 
+#### **README.md**
+We have to write the directions in the README.md.
+
+example:
+
+    # Addition
+	You receive two numbers and you have to add the numbers.
+	If one of the two numbers is a string you have to return "isNaN".
+
+	Have fun!
+
+
+
+
+
