@@ -6,7 +6,7 @@
 ### **Dependencies**
 The unit testing framework [mochajs](https://mochajs.org/) must be installed locally.
 
-After that you can use any assertion library you want like:
+After that we can use any assertion library we want like:
 
 [expect.js](https://github.com/Automattic/expect.js) 
 `npm install expect.js --save`
@@ -74,6 +74,9 @@ example:
         });
     
     });
+    
+In this folder we have mocha.opts file, we can configure which type of test we want.
+For more information: [mocha options file](https://mochajs.org/#mochaopts)
 
 #### **.gitignore**
 By default we ignore the node_modules folder.
