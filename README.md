@@ -1,55 +1,49 @@
-Exercise template - javascript
-====================================
-## How it works
-### Concepts
-Exercises on Coderpower can be **Discoveries**, **Practices** or **Challenges**.
+#Exercise template - javascript
+##How it works
+###Concepts
+Exercises on Coderpower can be Discoveries, Practices or Challenges.
 
-- **Disovery** : An exercise that show off, by the example, how a library, framework, SDK, API, or design pattern works. It provides an initial solution that can be tweaked by the developers.
-
-
-- **Practice** : An exercice that let the developers struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
-
-- **Challenge** : An exercise where the developers are faced with others to solve a problem. They are assessed on two criteria.
-    - **The ranking** : For each challenges we define:
-        - a base score: ( **X** ), 
+- **Disovery** : An exercise that show, by example, how a library, framework, SDK, API, or design pattern works. It provides an initial code that can be tweaked by the developers.
+- **Practice** : An exercise that allows the developers to struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
+- **Challenge** : An exercise where the developers are competing against each other to solve a problem. They are assessed on two criteria.
+    - **The ranking**:
+        - a base score: ( **X** ),
         - a bonus score: ( **Y** ),
-        - a bonus time: ( **T** ) 
-            - **1st** participant finding the solution wins **100%** of **X** 
+        - a bonus time: ( **T** )
+            - **1st** participant finding the solution wins **100%** of **X**
             - **2nd** participant wins **80%** of **X**
             - **3rd** wins **70%** of **X**
             - **4th** wins **60%** of **X**
-            - **5th** and **next** win **50%** of **X**
-    - **The time** : For those who find the solution in less than **T**, we’ll apply the % of **T** consumned, to **Y** and add it to their score.
+            - **5th** and next win **50%** of **X**
+    - **The time**: For those who find the solution in **less** than **T**, we’ll apply the **%** of **T** consumed, to **Y** and add it to their score.
 
-### Imports
-Exercises on Coderpower are not more than repositories. The creation process is just a clone of the repository on the server. Then we parse some key information like the written tests, `README.md`, and the `meta.json` (we will talk about this one in the next section).
+    
+###Imports
+Exercises on Coderpower are not more than repositories. The creation process is just a clone of the repository on the server. Then we parse some key information like the written tests, README.md, and the meta.json (we will talk about this one in the next section).
 
-
-## **Requirements**
-### Testing framework
-Behind the scene, Coderpower validates participations by **running tests**. We have specific requirements for each languages regarding the testing framework.  
+##Requirements
+###Testing framework
+Behind the scene, Coderpower validates participations by **running tests**. We have specific testing frameworks regarding the requirements for each language.
 
 For the **javascript** language we use [mocha](https://mochajs.org/).
 
 You can use any assertion/mocking library you like but don't forget to add it to your `package.json`.
 
->As an example, at Coderpower we like to use :
+> **Note:** at Coderpower we like to use : 
 
->- [expect.js](https://github.com/Automattic/expect.js) 
-`npm install expect.js --save`
-- [should.js](https://shouldjs.github.io/) 
- `npm install should --save`
-- [sinon.js](http://sinonjs.org/)
-`npm install sinon --save`
+>- expect.js `npm install expect.js --save`
+- should.js `npm install should --save`
+- sinon.js `npm install sinon --save`
+
 
 <h3 style="color: red">/!\ Important /!\ </h3>
-For performance matters all code that take more than **3 seconds** to run we be killed. You need to take this into account when you design your test suites, especially for asynchronous code.
+For performance matters all codes that take more than **3 seconds** to run will be **killed**. You need to take this into account when you design your test suites, especially for asynchronous code.
 
-### Content
+###Content
 In order to import a repository into the Coderpower platform you need to provide some information.
 
-- `README.md` : The readme will be parsed and take as the **subject** of your exercise.
-- `meta.json` : The file describes which sources will be **editables** by the developers. Here is an example : 
+- `README.md` : The readme will be parsed and take as the subject of your exercise.
+- `meta.json` : The file describes which sources will be editables by the developers. Here is an example :
 
 ```json
 {
@@ -58,28 +52,27 @@ In order to import a repository into the Coderpower platform you need to provide
     ]
 }
 ```
-Here we tell to Coderpower this exercise allows the file `addition.js` located in `./sources/` *(path must be relative to the root directory)* to be edited by the developers.
 
+Here we tell to Coderpower this exercise allows the file `addition.js` located in `./sources/` *(path must be relative to the root directory)* to be edited by the developers.
 We will then ensure that written tests still pass after developers submit their changes to the files.
 
-
-
-## **Folders and files**
-In this section we will describe the content of this exercise, used as example for futur content creation.
+##Folders and files
+In this section we will describe the content of this exercise, used as example for future content creation.
 
 The repository contains:
 
- - `sources` folder 
- - `test` folder 
- - `.gitignore`
- - `meta.json` 
- - `package.json`
- - `README.md`
+- `sources` folder
+- `test` folder
+- `.gitignore`
+- `meta.json`
+- `package.json`
+- `README.md`
 
 #### `sources`
 Here, the sources folder contains all the files needed to make the tests pass.
 
 ```javascript
+// addition.js
 module.exports = function addition(a , b){
     if( isNaN(a) || isNaN(b))
         return 'isNaN';
@@ -89,7 +82,7 @@ module.exports = function addition(a , b){
 ```
 
 #### `test`
-Here, the test folder contains all the tests that will validate the sources.
+Here, the test folder contains all the tests that will validated by the sources.
 
 ```javascript
 var expect = require('expect.js');
@@ -118,6 +111,7 @@ suite('Add two numbers', function(){
         });
     });
 ```
+
 > **Note:** In the `test` directory we have a file `mocha.opts` that allow us to use the TDD style. For more information check [mocha options documentation](https://mochajs.org/#mochaopts).
 
 #### `.gitignore`
@@ -126,6 +120,7 @@ As a good practice, we ignore the node_modules folder.
 ```
     node_modules
 ```
+
 #### `meta.json`
 The meta.json file tells where the editables files are.
 
@@ -162,16 +157,12 @@ The package.json describes the dependencies.
 ```
 
 #### `README.md`
-For demonstration purposes we used the README.md to explain how the content creation works, but in real cases, the README.md would look like so: 
+For demonstration purposes we used the README.md to explain how the content creation works, but in real cases, the README.md would look like this:
 
 ```
 # Addition
-	You will receive two numbers the function has the addition of both. 
-	If one the parameter cannot be converted as a number the function must return NaN.
+	You will receive two numbers as parameters and the function has to return the addition of both. 
+	If one of the parameter cannot be converted as a number the function must return NaN.
 ```
 
 If you have any question regarding the content creation process feel free to contact root@coderpower.com.
-
-
-
-
