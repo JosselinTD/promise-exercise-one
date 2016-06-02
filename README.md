@@ -19,7 +19,7 @@ Exercises on Coderpower can be **Discoveries**, **Practices** or **Challenges**.
             - **3rd** wins **70%** of **X**
             - **4th** wins **60%** of **X**
             - **5th** and **next** win **50%** of **X**
-    - **The time** : For those who find the solution in less than **T**, we’ll apply the % of **T** consumned, to **Y** and add it to their base score.
+- **The time** : For those who find the solution in less than **T**, we’ll apply the % of **T** consumned, to **Y** and add it to their base score.
 
 ### Imports
 Exercises on Coderpower are not more than repositories. The creation process is juste a clone of the repository, on the server, then we parse some key information like the written tests, readme.md, and the meta.json (we will talk about this one in the next section).
