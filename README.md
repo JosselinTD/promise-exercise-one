@@ -1,8 +1,10 @@
 #Exercise template - javascript
+This document aims to explain with simple words how content is created on Coderpower. It should also helps developers to understand the processes that are run behind the scene by the coderpower platform to evaluate code submissions.
+
 ##How it works
 ###Concepts
 Exercises on Coderpower can be Discoveries, Practices or Challenges.
-
+ 
 - **Disovery** : An exercise that show, by example, how a library, framework, SDK, API, or design pattern works. It provides an initial code that can be tweaked by the developers.
 - **Practice** : An exercise that allows the developers to struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
 - **Challenge** : An exercise where the developers are competing against each other to solve a problem. They are assessed on two criteria.
