@@ -10,7 +10,7 @@ Exercises on Coderpower can be **Discoveries**, **Practices** or **Challenges**.
 - **Practice** : An exercice that let the developers struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
 
 - **Challenge** : An exercise where the developers are faced with others to solve a problem. They are assessed on two criteria.
-    - **The Ranking** : For each challenges we define:
+    - **The ranking** : For each challenges we define:
         - a base score: ( **X** ), 
         - a bonus score: ( **Y** ),
         - a bonus time: ( **T** ) 
