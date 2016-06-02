@@ -9,7 +9,7 @@ Exercises on Coderpower can be **Discoveries**, **Practices** or **Challenges**.
 
 - **Practice** : An exercice that let the developers struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
 
-- **Challenge** : An exercise where the developers are faced with others to solve the problem. They are assessed on two criteria.
+- **Challenge** : An exercise where the developers are faced with others to solve a problem. They are assessed on two criteria.
     - **The Ranking** : For each challenges we define:
         - a base score: ( **X** ), 
         - a bonus score: ( **Y** ),
@@ -19,7 +19,7 @@ Exercises on Coderpower can be **Discoveries**, **Practices** or **Challenges**.
             - **3rd** wins **70%** of **X**
             - **4th** wins **60%** of **X**
             - **5th** and **next** win **50%** of **X**
-    - **The time** : For those who find the solution in less than **T**, we’ll apply the % of **T** consumned, to **Y** and add it to their base score.
+    - **The time** : For those who find the solution in less than **T**, we’ll apply the % of **T** consumned, to **Y** and add it to their score.
 
 ### Imports
 Exercises on Coderpower are not more than repositories. The creation process is just a clone of the repository on the server. Then we parse some key information like the written tests, `README.md`, and the `meta.json` (we will talk about this one in the next section).
