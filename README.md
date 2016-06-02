@@ -84,7 +84,7 @@ module.exports = function addition(a , b){
 ```
 
 #### `test`
-Here, the test folder contains all the tests that will validated by the sources.
+Here, the test folder contains all the tests that will validate the sources.
 
 ```javascript
 var expect = require('expect.js');
@@ -92,26 +92,28 @@ var addition = require('../sources/addition.js');
 
 suite('Add two numbers', function(){
     test('Must return "isNaN" if one of the argument is not a number', function(){
-       var a = 'p';
-       var b = 32;
-       var result = addition(a, b);
-            expect(result).to.be('isNaN');
-        });
-        
-        test('Must return a number', function(){
-            var a = '2';
-            var b = 5;
-            var result = addition(a, b);
-            expect(result).to.be.a('number');
-        });
-        
-        test('Must return a right result', function(){
-            var a = '23';
-            var b = 54;
-            var result = addition(a, b);
-            expect(result).to.be.equal(77);
-        });
+        var a = 'p';
+        var b = 32;
+        var result = addition(a, b);
+        expect(result).to.be('isNaN');
     });
+    
+    test('Must return a number', function(){
+        var a = '2';
+        var b = 5;
+        var result = addition(a, b);
+        
+        expect(result).to.be.a('number');
+    });
+    
+    test('Must return a right result', function(){
+        var a = '23';
+        var b = 54;
+        var result = addition(a, b);
+        
+        expect(result).to.be.equal(77);
+    });
+});
 ```
 
 > **Note:** In the `test` directory we have a file `mocha.opts` that allow us to use the TDD style. For more information check [mocha options documentation](https://mochajs.org/#mochaopts).
@@ -159,7 +161,7 @@ The package.json describes the dependencies.
 ```
 
 #### `README.md`
-For demonstration purposes we used the README.md to explain how the content creation works, but in real cases, the README.md would look like this:
+For demonstration purposes we used the `README.md` to explain how the content creation works, but in real cases, the `README.md` would look like this:
 
 ```
 # Addition
@@ -168,3 +170,4 @@ For demonstration purposes we used the README.md to explain how the content crea
 ```
 
 If you have any question regarding the content creation process feel free to contact root@coderpower.com.
+
