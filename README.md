@@ -27,7 +27,7 @@ Exercises on Coderpower are not more than repositories. The creation process is 
 
 ## **Requirements**
 ### Testing framework
-Behind the scene, Coderpower validates participations by running tests. We have specific requirements for each languages regarding the testing framework.  
+Behind the scene, Coderpower validates participations by **running tests**. We have specific requirements for each languages regarding the testing framework.  
 
 For the **javascript** language we use [mocha](https://mochajs.org/).
 
@@ -48,8 +48,8 @@ For performance matters all code that take more than **3 seconds** to run we be 
 ### Content
 In order to import a repository into the Coderpower platform you need to provide some information.
 
-- Readme.md : The readme will be parsed and take as the **subject** of your exercise.
-- meta.json : The file describes which sources will be **editables** by the developers. Here is an example : 
+- `README.md` : The readme will be parsed and take as the **subject** of your exercise.
+- `meta.json` : The file describes which sources will be **editables** by the developers. Here is an example : 
 
 ```json
 {
@@ -60,7 +60,7 @@ In order to import a repository into the Coderpower platform you need to provide
 ```
 Here we tell to Coderpower this exercise allows the file `addition.js` located in `./sources/` *(path must be relative to the root directory)* to be edited by the developers.
 
-We will then ensure that the written tests still pass after developers submit their changes to this file.
+We will then ensure that written tests still pass after developers submit their changes to the files.
 
 
 
@@ -89,7 +89,7 @@ module.exports = function addition(a , b){
 ```
 
 #### `test`
-Here, the test folder contains all the tests that will validate the sources:
+Here, the test folder contains all the tests that will validate the sources.
 
 ```javascript
 var expect = require('expect.js');
@@ -124,7 +124,7 @@ suite('Add two numbers', function(){
 As a good practice, we ignore the node_modules folder.
 
 ```
-    /node_modules
+    node_modules
 ```
 #### `meta.json`
 The meta.json file tells where the editables files are.
@@ -136,6 +136,8 @@ The meta.json file tells where the editables files are.
         ]
     }
 ```
+> **Note:** You don't need to make all sources editable. It can be only one file, maybe two. Letting developers work with existing code.
+
 #### `package.json`
 The package.json describes the dependencies.
 
@@ -168,6 +170,7 @@ For demonstration purposes we used the README.md to explain how the content crea
 	If one the parameter cannot be converted as a number the function must return NaN.
 ```
 
+If you have any question regarding the content creation process feel free to contact root@coderpower.com.
 
 
 
