@@ -1,8 +1,8 @@
-#Exercise template - javascript
+# Exercise template - javascript
 This document aims to explain with simple words how content is created on Coderpower. It should also helps developers to understand the processes that are run behind the scene by the coderpower platform to evaluate code submissions.
 
-##How it works
-###Concepts
+## How it works
+### Concepts
 Exercises on Coderpower can be Discoveries, Practices or Challenges.
  
 - **Disovery** : An exercise that show, by example, how a library, framework, SDK, API, or design pattern works. It provides an initial code that can be tweaked by the developers.
@@ -20,11 +20,11 @@ Exercises on Coderpower can be Discoveries, Practices or Challenges.
     - **The time**: For those who find the solution in **less** than **T**, we’ll apply the **%** of **T** consumed, to **Y** and add it to their score.
 
     
-###Imports
+### Imports
 Exercises on Coderpower are not more than repositories. The creation process is just a clone of the repository on the server. Then we parse some key information like the written tests, README.md, and the meta.json (we will talk about this one in the next section).
 
-##Requirements
-###Testing framework
+## Requirements
+### Testing framework
 Behind the scene, Coderpower validates participations by **running tests**. We have specific testing frameworks regarding the requirements for each language.
 
 For the **javascript** language we use [mocha](https://mochajs.org/).
@@ -41,7 +41,7 @@ You can use any assertion/mocking library you like but don't forget to add it to
 <h3 style="color: red">/!\ Important /!\ </h3>
 For performance matters all codes that take more than **3 seconds** to run will be **killed**. You need to take this into account when you design your test suites, especially for asynchronous code.
 
-###Content
+### Content
 In order to import a repository into the Coderpower platform you need to provide some information.
 
 - `README.md` : The readme will be parsed and take as the subject of your exercise.
@@ -58,7 +58,7 @@ In order to import a repository into the Coderpower platform you need to provide
 Here we tell to Coderpower this exercise allows the file `addition.js` located in `./sources/` *(path must be relative to the root directory)* to be edited by the developers.
 We will then ensure that written tests still pass after developers submit their changes to the files.
 
-##Folders and files
+## Folders and files
 In this section we will describe the content of this exercise, used as example for future content creation.
 
 The repository contains:
