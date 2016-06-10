@@ -39,12 +39,12 @@ You can use any assertion/mocking library you like but don't forget to add it to
 
 
 <h3 style="color: red">/!\ Important /!\ </h3>
-For performance matters all codes that take more than **3 seconds** to run will be **killed**. You need to take this into account when you design your test suites, especially for asynchronous code.
+For performance purposes all codes that take more than **3 seconds** to run will be **killed**. You need to take this into account when you design your test suites, especially for asynchronous code.
 
 ### Content
 In order to import a repository into the Coderpower platform you need to provide some information.
 
-- `README.md` : The readme will be parsed and take as the subject of your exercise.
+- `README.md` : The readme will be parsed and taken as the subject of your exercise.
 - `meta.json` : The file describes which sources will be editables by the developers. Here is an example :
 
 ```json
@@ -59,7 +59,7 @@ Here we tell to Coderpower this exercise allows the file `addition.js` located i
 We will then ensure that written tests still pass after developers submit their changes to the files.
 
 ## Folders and files
-In this section we will describe the content of this exercise, used as example for future content creation.
+In this section, we will describe the content of this exercise, as an example for creating your own future content.
 
 The repository contains:
 
