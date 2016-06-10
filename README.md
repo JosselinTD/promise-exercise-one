@@ -1,14 +1,14 @@
 # Exercise template - javascript
-This document aims to explain with simple words how content is created on Coderpower. It should also helps developers to understand the processes that are run behind the scene by the coderpower platform to evaluate code submissions.
+This document aims to explain concisely how content is created on Coderpower. It should also help developers understand the processes behind the scenes of the coderpower platform to evaluate code submissions.
 
 ## How it works
 ### Concepts
 Exercises on Coderpower can be Discoveries, Practices or Challenges.
  
-- **Disovery** : An exercise that show, by example, how a library, framework, SDK, API, or design pattern works. It provides an initial code that can be tweaked by the developers.
-- **Practice** : An exercise that allows the developers to struggle with a subject making them understand the concept by practicing. The developers can try to solve the exercise as many time as they want.
-- **Challenge** : An exercise where the developers are competing against each other to solve a problem. They are assessed on two criteria.
-    - **The ranking**:
+- **Discovery**: An exercise that show, by example, how a library, framework, SDK, API, or design pattern works. It provides an initial code that can be tweaked by developers.
+- **Practice**: An exercise that allows developers to explore a subject helping them to understand the concept through practice. Developers can try to solve exercises as many times as they like.
+- **Challenge**: An exercise where developers compete against each other to solve a problem. They are assessed on two criteria.
+    - **Ranking**:
         - a base score: ( **X** ),
         - a bonus score: ( **Y** ),
         - a bonus time: ( **T** )
@@ -17,7 +17,7 @@ Exercises on Coderpower can be Discoveries, Practices or Challenges.
             - **3rd** wins **70%** of **X**
             - **4th** wins **60%** of **X**
             - **5th** and next win **50%** of **X**
-    - **The time**: For those who find the solution in **less** than **T**, we’ll apply the **%** of **T** consumed, to **Y** and add it to their score.
+    - **Time**: For those who find the solution in **less** than **T**, we’ll apply the **%** of **T** consumed, to **Y** and add it to their score.
 
     
 ### Imports
@@ -25,7 +25,7 @@ Exercises on Coderpower are not more than repositories. The creation process is 
 
 ## Requirements
 ### Testing framework
-Behind the scene, Coderpower validates participations by **running tests**. We have specific testing frameworks regarding the requirements for each language.
+Behind the scenes, Coderpower validates participations by **running tests**. We have specific testing frameworks regarding the requirements for each language.
 
 For the **javascript** language we use [mocha](https://mochajs.org/).
 
@@ -119,14 +119,14 @@ suite('Add two numbers', function(){
 > **Note:** In the `test` directory we have a file `mocha.opts` that allow us to use the TDD style. For more information check [mocha options documentation](https://mochajs.org/#mochaopts).
 
 #### `.gitignore`
-As a good practice, we ignore the node_modules folder.
+As good practice, we ignore the node_modules folder.
 
 ```
     node_modules
 ```
 
 #### `meta.json`
-The meta.json file tells where the editables files are.
+The meta.json file tells where the editable files are.
 
 ```json 
     {
@@ -166,8 +166,8 @@ For demonstration purposes we used the `README.md` to explain how the content cr
 ```
 # Addition
 	You will receive two numbers as parameters and the function has to return the addition of both. 
-	If one of the parameter cannot be converted as a number the function must return NaN.
+	If one of the parameters cannot be converted as a number, the function must return NaN.
 ```
 
-If you have any question regarding the content creation process feel free to contact root@coderpower.com.
+If you have any questions regarding the content creation process feel free to contact root@coderpower.com.
 
