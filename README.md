@@ -1,5 +1,5 @@
 # Exercise template - javascript
-This document aims to explain concisely how content is created on Coderpower. It should also help developers understand the processes behind the scenes of the coderpower platform to evaluate code submissions.
+This document provides a concise explanation of how content is created on Coderpower. It should also help developers understand the processes behind the scenes of the coderpower platform to evaluate code submissions.
 
 ## How it works
 ### Concepts
