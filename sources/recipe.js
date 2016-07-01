@@ -1,5 +1,5 @@
 var ingredients = require('./ingredients.js');
 
-module.exports = function makeChocolate(chocolate, bake){
+module.exports.makeChocolate = function(chocolate, bake){
     bake(chocolate);
 };
