@@ -1,7 +1,7 @@
 {
-  "name": "javascript-exercise-template",
+  "name": "No promise, no chocolate !",
   "version": "1.0.0",
-  "description": "How to create an exercise in javascript on coderpower.com",
+  "description": "How to deal without any promises ? Callback powa !",
   "directories": {
     "test": "./test"
   },
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Coderpower/javascript-exercise-template.git"
+    "url": "git+https://github.com/JosselinTD/promise-exercise-one.git"
   },
   "author": "Coderpower Sample",
-  "homepage": "https://github.com/Coderpower/javascript-exercise-template.git#readme",
+  "homepage": "https://github.com/JosselinTD/promise-exercise-one.git#readme",
   "dependencies": {
     "expect.js": "^0.3.1"
   }
