@@ -12,13 +12,10 @@ function getComposed(initialState, callback){
 }
 
 function step1(toProcess, callback) {
-	distant.call1(toProcess, callback);
 }
 
 function step2(toProcess, callback) {
-	distant.call2(toProcess, callback);
 }
 
 function step3(toProcess, callback) {
-	distant.call3(toProcess, callback);
 }
